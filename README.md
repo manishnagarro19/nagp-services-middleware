@@ -58,3 +58,9 @@ Launch a new terminal and activate the virtual environment and execute the Notif
 ```bash
 python3 notification2/consumer.py
 ```
+
+## Run Rabbit MQ on local system
+We've crafted a Dockerfile to facilitate RabbitMQ setup. Execute the following command to run RabbitMQ on your local system.
+```bash
+make setup-rabbit-mq
+```

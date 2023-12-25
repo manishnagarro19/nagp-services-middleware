@@ -12,4 +12,4 @@ one-time:
 
 .PHONY: setup-rabbit-mq
 setup-rabbit-mq:
-	docker-compose -f rabbit_mq_cluster/docker-compose.yml up
+	docker-compose -f rabbit_mq_setup/docker-compose.yml up
