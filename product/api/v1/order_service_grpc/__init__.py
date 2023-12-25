@@ -1,0 +1,1 @@
+from .order_service_client import order_service_stub

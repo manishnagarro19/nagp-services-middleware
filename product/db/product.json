@@ -1,0 +1,144 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Samsung Galaxy A52",
+      "color": "Black",
+      "description": "Mid-range Android smartphone with a vibrant display and versatile camera setup.",
+      "price_inr": 24999
+    },
+    {
+      "id": 2,
+      "name": "Apple AirPods Pro",
+      "color": "White",
+      "description": "Wireless earbuds with active noise cancellation and immersive sound quality.",
+      "price_inr": 20999
+    },
+    {
+      "id": 3,
+      "name": "Fitbit Charge 5",
+      "color": "Blue",
+      "description": "Advanced fitness tracker with health monitoring features and a sleek design.",
+      "price_inr": 14999
+    },
+    {
+      "id": 4,
+      "name": "Lenovo Legion 5 Gaming Laptop",
+      "color": "Phantom Black",
+      "description": "Powerful gaming laptop with AMD Ryzen processor and NVIDIA GeForce GPU.",
+      "price_inr": 84999
+    },
+    {
+      "id": 5,
+      "name": "Amazon Echo Show 8",
+      "color": "Charcoal",
+      "description": "Smart display with Alexa voice control for hands-free entertainment.",
+      "price_inr": 8999
+    },
+    {
+      "id": 6,
+      "name": "Xiaomi Mi Smart Band 6",
+      "color": "Orange",
+      "description": "Affordable fitness tracker with a large AMOLED display and heart rate monitoring.",
+      "price_inr": 2499
+    },
+    {
+      "id": 7,
+      "name": "Dell 27-inch QHD Monitor",
+      "color": "Silver",
+      "description": "High-resolution monitor for productivity and immersive multimedia experiences.",
+      "price_inr": 29999
+    },
+    {
+      "id": 8,
+      "name": "Sony WH-1000XM4 Headphones",
+      "color": "Silver",
+      "description": "Premium over-ear headphones with industry-leading noise cancellation technology.",
+      "price_inr": 29990
+    },
+    {
+      "id": 9,
+      "name": "Canon EOS M50 Mark II",
+      "color": "White",
+      "description": "Mirrorless camera with 4K video recording and versatile shooting capabilities.",
+      "price_inr": 58999
+    },
+    {
+      "id": 10,
+      "name": "HP Pavilion 14 Laptop",
+      "color": "Natural Silver",
+      "description": "Slim and stylish laptop for everyday computing tasks and entertainment.",
+      "price_inr": 54999
+    },
+    {
+      "id": 11,
+      "name": "OnePlus 9 Pro",
+      "color": "Morning Mist",
+      "description": "Flagship Android smartphone with Hasselblad camera system and fast charging.",
+      "price_inr": 64999
+    },
+    {
+      "id": 12,
+      "name": "Bose SoundLink Revolve+ Speaker",
+      "color": "Triple Black",
+      "description": "Portable Bluetooth speaker with 360-degree sound and water-resistant design.",
+      "price_inr": 24990
+    },
+    {
+      "id": 13,
+      "name": "Logitech MX Master 3 Mouse",
+      "color": "Graphite",
+      "description": "Wireless mouse with advanced features for productivity and comfort.",
+      "price_inr": 8999
+    },
+    {
+      "id": 14,
+      "name": "Samsung 55-inch 4K QLED TV",
+      "color": "Titan Gray",
+      "description": "QLED TV with Quantum Dot technology for vibrant and lifelike visuals.",
+      "price_inr": 79999
+    },
+    {
+      "id": 15,
+      "name": "Garmin Forerunner 945",
+      "color": "Black",
+      "description": "Advanced GPS smartwatch for fitness enthusiasts with performance metrics.",
+      "price_inr": 49990
+    },
+    {
+      "id": 16,
+      "name": "GoPro HERO 10 Black",
+      "color": "Midnight Black",
+      "description": "Action camera with 5.3K video recording and improved stabilization.",
+      "price_inr": 44990
+    },
+    {
+      "id": 17,
+      "name": "Acer Aspire 5 Laptop",
+      "color": "Steel Gray",
+      "description": "Budget-friendly laptop with AMD Ryzen processor and Full HD display.",
+      "price_inr": 34999
+    },
+    {
+      "id": 18,
+      "name": "JBL Flip 5 Portable Speaker",
+      "color": "Squad",
+      "description": "Waterproof Bluetooth speaker for on-the-go music and entertainment.",
+      "price_inr": 8999
+    },
+    {
+      "id": 19,
+      "name": "Razer BlackWidow Elite Gaming Keyboard",
+      "color": "Quartz Pink",
+      "description": "Mechanical gaming keyboard with customizable RGB lighting and wrist rest.",
+      "price_inr": 14999
+    },
+    {
+      "id": 20,
+      "name": "Asus ROG Strix RTX 3080 Graphics Card",
+      "color": "ROG Strix",
+      "description": "High-performance graphics card for gaming enthusiasts with Ray Tracing support.",
+      "price_inr": 99999
+    }
+  ]
+}
