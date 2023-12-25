@@ -31,15 +31,12 @@ EXCHANGE_INFO = {
     },
 }
 
-APP_HOST: str = os.environ.get("APP_HOST", "0.0.0.0")
-
-APP_PORT: int = int(os.environ.get("APP_PORT", 8000))
-
-ENV: str = os.environ.get("ENV", "dev")
+GRPC_SERVER_PORT = "50051"
 
 LOG_DIR = os.environ.get("BACKEND_LOG_DIR", BASE_DIR)
 
 LOG_LEVEL = bool(os.environ.get("LOG_LEVEL", "DEBUG"))
+
 # Logging configuration
 logging_config = {
     "version": 1,

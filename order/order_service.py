@@ -106,7 +106,7 @@ class OrderService(order_pb2_grpc.OrderServiceServicer):
         # Publish event for order creation
         self.publish_order_event(exchange_info, event_name, product_id, order_id)
 
-        return order_pb2.OrderResponse(order_id=request.product_id)
+        return order_pb2.OrderResponse(order_id=order_id)
 
     def UpdateOrder(self, request, context):
         """

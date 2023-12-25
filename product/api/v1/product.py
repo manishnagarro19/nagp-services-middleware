@@ -33,13 +33,16 @@ async def place_order(product_req: PlaceOrderRequestSchema):
         request = OrderRequest(product_id=product_id, quantity=quantity)
         response = order_service_stub.PlaceOrder(request)
 
-        return {"message": "Order placed successfully", "order_id": response.order_id}
+        return {
+            "message": "Your order has been successfully placed.",
+            "order_id": response.order_id,
+        }
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error placing order: {str(e)}")
 
 
-@product_router.post(
+@product_router.put(
     "/update_order/{order_id}",
     response_model=UpdateOrderResponseSchema,
     responses={
@@ -47,7 +50,7 @@ async def place_order(product_req: PlaceOrderRequestSchema):
         "200": {"description": "Update order"},
     },
 )
-async def update_order(order_id: int, product_req: UpdateOrderRequestSchema):
+async def update_order(order_id: str, product_req: UpdateOrderRequestSchema):
     try:
         # Call gRPC service to place order
         quantity = product_req.quantity
@@ -57,7 +60,10 @@ async def update_order(order_id: int, product_req: UpdateOrderRequestSchema):
         )
         response = order_service_stub.UpdateOrder(request)
 
-        return {"message": "Order updated successfully", "order_id": response.order_id}
+        return {
+            "message": "The order has been successfully updated.",
+            "order_id": order_id,
+        }
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error placing order: {str(e)}")
