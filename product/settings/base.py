@@ -48,8 +48,6 @@ logging_config = {
     "formatters": {
         "json": {
             "class": "pythonjsonlogger.jsonlogger.JsonFormatter",
-            # "format": "%(asctime)s %(process)s %(levelname)s %(name)s"
-            # " %(module)s %(funcName)s %(lineno)-4d %(message)s",
             "format": "%(asctime)s %(process)s %(levelname)s %(name)s" "%(message)s",
         }
     },
@@ -57,15 +55,7 @@ logging_config = {
         "product-application-log": {
             "level": "DEBUG",
             "class": "logging.handlers.RotatingFileHandler",
-            "filename": os.path.join(LOG_DIR, "application.log"),
-            "formatter": "json",
-            "maxBytes": 1024 * 1024 * 200,
-            "backupCount": 5,
-        },
-        "product-request-log": {
-            "level": "DEBUG",
-            "class": "logging.handlers.RotatingFileHandler",
-            "filename": os.path.join(LOG_DIR, "request.log"),
+            "filename": os.path.join(LOG_DIR, "product-application.log"),
             "formatter": "json",
             "maxBytes": 1024 * 1024 * 200,
             "backupCount": 5,
@@ -82,14 +72,8 @@ logging_config = {
             "handlers": ["default", "product-application-log"],
             "level": LOG_LEVEL,
             "propagate": True,
-        },
-        "product-request": {
-            "handlers": ["default", "product-request-log"],
-            "level": LOG_LEVEL,
-            "propagate": True,
-        },
+        }
     },
-    # "root": {"level": "DEBUG", "handlers": ["console"], "propagate": True},
 }
 
 logging.config.dictConfig(logging_config)

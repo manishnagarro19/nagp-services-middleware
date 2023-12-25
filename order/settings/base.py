@@ -53,7 +53,7 @@ logging_config = {
         "order-service-log": {
             "level": "DEBUG",
             "class": "logging.handlers.RotatingFileHandler",
-            "filename": os.path.join(LOG_DIR, "application.log"),
+            "filename": os.path.join(LOG_DIR, "order-service.log"),
             "formatter": "json",
             "maxBytes": 1024 * 1024 * 200,
             "backupCount": 5,

@@ -13,6 +13,7 @@ class PlaceOrderResponseSchema(BaseModel):
 
 class UpdateOrderRequestSchema(BaseModel):
     quantity: int = Field(..., description="quantity")
+    product_id: int = Field(..., description="product_id")
 
 
 class UpdateOrderResponseSchema(BaseModel):

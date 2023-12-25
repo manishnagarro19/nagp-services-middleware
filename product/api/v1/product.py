@@ -51,7 +51,7 @@ async def update_order(order_id: int, product_req: UpdateOrderRequestSchema):
     try:
         # Call gRPC service to place order
         quantity = product_req.quantity
-        product_id = 10
+        product_id = product_req.product_id
         request = OrderRequest(
             order_id=order_id, product_id=product_id, quantity=quantity
         )
