@@ -68,6 +68,11 @@ class RabbitMQConsumerBase:
         order_place_exchange_info = EXCHANGE_INFO.get("order_place")
         order_update_exchange_info = EXCHANGE_INFO.get("order_update")
 
+        self.channel.exchange_declare(
+            exchange=order_update_exchange_info.get("exchange_name"),
+            exchange_type=order_update_exchange_info.get("exchange_type"),
+        )
+
         result = self.channel.queue_declare(
             queue=NOTIFICATION_2_QUEUE_NAME, exclusive=False
         )
